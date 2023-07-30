@@ -132,11 +132,13 @@ header#mobile-menu #snb ul li #sub-menu{}
 
 /*  */
 /* 메인 비주얼 */
+
 #visual{
     position: relative;
     width: 100vw;
     height: 100vh;
     color: #fff;
+    overflow: hidden;
 }
 #visual .swiper-container.outer-sw{
     width: 100%;
@@ -306,17 +308,44 @@ header#mobile-menu #snb ul li #sub-menu{}
         width: 360px;
         font-size: 14px;
     }
+    header#mobile-menu{
+        padding: 40px 30px;
+    }
 }
 @media all and (max-width:725px){
+    header#mobile-menu h1{
+        width: 50%;
+    }
+    header#mobile-menu #snb{
+        width: 50%;
+        margin-top: 8px;
+    }
+    header#mobile-menu #snb ul{
+        justify-content: end;
+    }
+    header#mobile-menu #snb ul li{
+        margin-left: 15px;
+    }
+    header#mobile-menu h1 a img{
+        width: 150px;
+    }
+    header#mobile-menu > div{
+        
+    }
     .icon-sw{
-        width: 100%;
+        width: 100vw;
         bottom: 120px;
         left: 10px;
+        overflow: hidden;
     }
     .news-container{
-        width: 100%;
+        width: 100vw;
         font-size: 16px;
         left: 10px;
         bottom: 0px;
+        overflow: hidden;
+    }
+    header#mobile-menu{
+        padding: 40px 20px;
     }
 }
