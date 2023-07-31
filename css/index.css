@@ -34,6 +34,7 @@ header#pc-menu{
     font-weight: bold;
     font-size: 16.5px;
 }
+
 header#pc-menu h1{
     width: 15%;
 }
@@ -97,6 +98,21 @@ header #snb ul li span:last-of-type{
     margin-bottom: 5px;
 }
 
+header:hover {
+    background-color: #fff;
+}
+header:hover div{
+    color: black;
+}
+header:hover h1 img{
+   filter: brightness(1) invert(1);
+}
+header:hover #snb ul li:nth-of-type(1)::after{
+    filter: none !important;
+}
+header:hover #snb ul li span{
+    background-color: black;
+}
 
 
 /* 모바일 헤더 */
